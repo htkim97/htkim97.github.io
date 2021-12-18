@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background: white;
+}
+
+.rain { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+
+}
+
+
+.typing.animate {
+  width: 200ch;
+  border-right: 0.1em solid black;
+  font-family: monospace;
+  font-size: 2em;
+  animation: type 2.5s steps(20), writer 1s infinite alternate, delete 0.5s steps(5) 2.5s, type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.typing.animate::before { 
+  content: "Hello, I'm Hyeonttt";
+  animation: type2 1s steps(4) 3.4s forwards, type3 3s steps(22, end) 6s forwards;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22ch;
+  }
+}
+
+@keyframes type2 {
+  from {
+    width: 16ch;
+    content: "Hello, I'm Hyeontae. "
+  }
+  to {
+    width: 20ch;
+    content: "Hello, I'm Hyeontae. "
+  }
+}
+
+@keyframes type3 {
+  from {
+    width: 21ch;
+    content: "Hello, I'm Hyeontae. Welcome to my Website!"
+  }
+  to {
+    width: 44ch;
+    content: "Hello, I'm Hyeontae. Welcome to my Website!"
+  }
+}
+
+@keyframes writer {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes delete {
+  from {
+    width: 21ch;
+  }
+  to {
+    width: 16ch;
+  }
+}
