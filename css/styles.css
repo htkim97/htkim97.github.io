@@ -11613,3 +11613,9 @@ html {
    font-size: 20px;
    
  }
+
+ .native{
+   float: left;
+   display: flex;
+ }
+ 
