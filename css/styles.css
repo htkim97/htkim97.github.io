@@ -11618,4 +11618,10 @@ html {
    float: left;
    display: flex;
  }
- 
+ #birth{
+   font-size: 15px;
+ }
+
+ .sns{
+   float: left;
+ }
